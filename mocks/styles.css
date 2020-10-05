@@ -100,53 +100,37 @@ nav .nav-icons-section a {
   color: black;
 }
 .menu-list:hover {
-  color: gray;
+  color: grey;
 }
 
 /* HEADER-FIN */
 /* MAIN EMPIEZA */
-main .main-image {
-  margin-top: 80px;
+
+.flex-main {
+  margin-top: 170px;
+  width: 1000px;
+  height: 250px;
+  /* border: 1px solid #555555; */
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 200px;
 }
-main .main-buttom {
-  border: none;
-}
-main .main-buttom div {
+.main-image {
   display: inline-block;
-  margin-left: 400px;
-  margin-top: 10px;
-  border: none;
+  justify-content: space-between;
+  padding: 50px;
 }
-.size-button-letf button {
-  margin-left: 40px;
-  border-radius: 6px;
-  width: 80px;
-  padding: 0 15px;
-  font-size: 15px;
-  border: none;
+.welcome-page {
+  font-size: 40px;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 50px;
+  text-align: center;
 }
-.size-button-right button {
-  margin-left: -80px;
-  border-radius: 6px;
-  width: 88px;
-  padding: 0 15px;
-  font-size: 15px;
-  border: none;
-}
-.size-button-right button:hover {
-  border: 1px solid #c6c6c6;
-  box-shadow: 0px1px1pxrgba (0, 0, 0, 0.1);
-  color: #222;
-  outline: none;
+.welcome-page:hover {
+  color: grey;
   cursor: pointer;
 }
-.size-button-letf button:hover {
-  border: 1px solid #c6c6c6;
-  box-shadow: 0px1px1pxrgba (0, 0, 0, 0.1);
-  color: #222;
-  outline: none;
-  cursor: pointer;
-}
+
 /* MAIN TERMINA */
