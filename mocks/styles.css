@@ -89,14 +89,14 @@ nav .nav-icons-section a {
 
 .menu-list {
   text-decoration: none;
-  width: 80px;
+  width: 90px;
   height: auto;
   display: inline-block;
   list-style: none;
   justify-content: center;
   align-items: center;
   margin-top: 35px;
-  margin-right: 5px;
+  margin-right: 2px;
   color: black;
 }
 .menu-list:hover {
@@ -134,3 +134,19 @@ nav .nav-icons-section a {
 }
 
 /* MAIN TERMINA */
+/* FOOTER EMPIEZA */
+.contact-footer {
+  margin-top: 180px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  background-color: rgb(209, 203, 203);
+}
+.icono-footer {
+  margin-left: 880px;
+}
+.number-footer {
+  margin-right: 20px;
+}
+/* FOOTER TERMINA*/
