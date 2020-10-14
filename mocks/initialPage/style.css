@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+/* icomoon guiño*/
+@font-face {
+  font-family: 'icomoon';
+  src: url('./fonts/icomoon.eot?z95wxo');
+  src: url('./fonts/icomoon.eot?z95wxo#iefix') format('embedded-opentype'),
+    url('./fonts/icomoon.ttf?z95wxo') format('truetype'),
+    url('./fonts/icomoon.woff?z95wxo') format('woff'),
+    url('./fonts/icomoon.svg?z95wxo#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: '\e9e7';
+}
+.burger-button {
+  font-size: 30px;
+  position: absolute;
+  margin-left: -45px;
+  margin-top: -5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.burger-button:hover {
+  color: blueviolet;
+}
+/* icomoon */
+/* icomoon redes*/
+@font-face {
+  font-family: 'icomoon';
+  src: url('fonts2/icomoon.eot?dzz4j9');
+  src: url('fonts2/icomoon.eot?dzz4j9#iefix') format('embedded-opentype'),
+    url('fonts2/icomoon.ttf?dzz4j9') format('truetype'),
+    url('fonts2/icomoon.woff?dzz4j9') format('woff'),
+    url('fonts2/icomoon.svg?dzz4j9#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* search */
+.icon-search:before {
+  content: '\e986';
+}
+.icon-search:hover {
+  color: rgb(216, 205, 226);
+}
+.icon-search {
+  display: block;
+  text-align: center;
+  margin: 120px 10px 15px 10px;
+  cursor: pointer;
+}
+/* search fin*/
+/* question */
+.icon-question:before {
+  content: '\ea09';
+}
+.icon-question:hover {
+  color: rgb(216, 205, 226);
+}
+.icon-question {
+  display: block;
+  text-align: center;
+  margin: 200px auto 0;
+  cursor: pointer;
+}
+
+/* question fin*/
+/* instagram */
+.icon-instagram:before {
+  content: '\ea92';
+}
+.icon-instagram:hover {
+  color: rgb(216, 205, 226);
+}
+.icon-instagram {
+  display: block;
+  text-align: center;
+  margin: 40px auto 0;
+  cursor: pointer;
+}
+/* instagram fin*/
+/* git */
+.icon-github:before {
+  content: '\eab0';
+}
+.icon-github:hover {
+  color: rgb(216, 205, 226);
+}
+.icon-github {
+  display: block;
+  text-align: center;
+  margin: 40px auto 0;
+  cursor: pointer;
+}
+/* git fin*/
+/* linkedin */
+.icon-linkedin:before {
+  content: '\eac9';
+}
+.icon-linkedin:hover {
+  color: rgb(216, 205, 226);
+}
+.icon-linkedin {
+  display: block;
+  text-align: center;
+  margin: 40px auto 0;
+  cursor: pointer;
+}
+/* linkedin fin*/
+
+/* icomoon */
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://www.mactualidad.com/wp-content/uploads/2014/07/smooth-purple.jpg');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+.navbar {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background: rgb(216, 216, 245);
+  padding: 0 60px;
+  box-sizing: border-box;
+}
+.logo {
+  width: 155px;
+}
+.logo img {
+  width: 40px;
+  position: relative;
+  z-index: 10px;
+  cursor: pointer;
+}
+nav {
+  flex: 1;
+}
+nav ul li {
+  list-style: none;
+  margin-right: 60px;
+  display: inline-block;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+.user {
+  width: 25rem;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  border-radius: 7px;
+  background: rgba(194, 114, 194, 0.479);
+  left: -4000px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.style-user:hover {
+  box-shadow: 2px 5px 5px rgba(216, 216, 245, 0.63);
+}
+
+.user a {
+  color: black;
+  text-decoration: none;
+}
+.team {
+  margin-right: -30px;
+}
+.user.is-active {
+  left: 57vw;
+}
+
+.user img {
+  width: 20px;
+  margin-left: 35px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.sidebar {
+  width: 150px;
+  height: 100vh;
+  background: rgba(251, 251, 251, 0.404);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.search-icon {
+  width: 20px;
+  display: block;
+  margin: 120px auto 0;
+}
+.social-links {
+  width: 30px;
+  display: block;
+  margin: 160px auto 0;
+  text-align: center;
+}
+/* .social-links img {
+  height: 15px;
+  margin-bottom: 30px; */
+
+.info-icon {
+  width: 30px;
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+}
+.input-search {
+  width: 350px;
+  height: 20px;
+  margin-top: -36px;
+  margin-left: 90px;
+  text-align: center;
+  display: flex;
+  position: absolute;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 0.5px solid #f5c3eac0;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+  left: -450px;
+}
+.is-motion input {
+  left: 10px;
+}
+.input-search:hover {
+  box-shadow: 0 5px 10px #d48cf0a4;
+}
+.msg-container {
+  /*  background: whitesmoke; */
+  width: 600px;
+  height: 300px;
+  position: absolute;
+  left: 14%;
+  top: 57%;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+.style-letter {
+  color: whitesmoke;
+  text-decoration: none;
+  text-align: center;
+}
+#slider {
+  display: inline-flex;
+  transition: 0.5s;
+}
+.msg-col {
+  width: 600px;
+  height: 280px;
+}
+.msg-col h1 {
+  font-size: 80px;
+  font-weight: 100px;
+  margin: 10px 0;
+}
+.msg-col p {
+  font-size: 15px;
+  line-height: 25px;
+}
+.msg-col a {
+  display: inline-block;
+  background: rgb(99, 99, 231);
+  font-size: 15px;
+  padding: 10px 35px;
+  border-radius: 30px;
+  margin-top: 25px;
+}
+.controller {
+  width: 1px;
+  height: 320px;
+  display: block;
+  background: white;
+  position: absolute;
+  top: 55%;
+  right: 50px;
+  transform: translateY(-50%);
+}
+#linea1,
+#linea2,
+#linea3,
+#linea4 {
+  height: 80px;
+  width: 10px;
+  cursor: pointer;
+  transform: translateX(-50%);
+}
+#active {
+  width: 5px;
+  height: 80px;
+  border-radius: 10px;
+  background: white;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
