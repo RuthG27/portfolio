@@ -6,11 +6,11 @@
 /* icomoon guiño*/
 @font-face {
   font-family: 'icomoon';
-  src: url('./fonts/icomoon.eot?z95wxo');
-  src: url('./fonts/icomoon.eot?z95wxo#iefix') format('embedded-opentype'),
-    url('./fonts/icomoon.ttf?z95wxo') format('truetype'),
-    url('./fonts/icomoon.woff?z95wxo') format('woff'),
-    url('./fonts/icomoon.svg?z95wxo#icomoon') format('svg');
+  src: url('../fonts/icomoon.eot?z95wxo');
+  src: url('../fonts/icomoon.eot?z95wxo#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?z95wxo') format('truetype'),
+    url('../fonts/icomoon.woff?z95wxo') format('woff'),
+    url('../fonts/icomoon.svg?z95wxo#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -52,11 +52,11 @@
 /* icomoon redes*/
 @font-face {
   font-family: 'icomoon';
-  src: url('fonts2/icomoon.eot?dzz4j9');
-  src: url('fonts2/icomoon.eot?dzz4j9#iefix') format('embedded-opentype'),
-    url('fonts2/icomoon.ttf?dzz4j9') format('truetype'),
-    url('fonts2/icomoon.woff?dzz4j9') format('woff'),
-    url('fonts2/icomoon.svg?dzz4j9#icomoon') format('svg');
+  src: url('../fonts2/icomoon.eot?dzz4j9');
+  src: url('../fonts2/icomoon.eot?dzz4j9#iefix') format('embedded-opentype'),
+    url('../fonts2/icomoon.ttf?dzz4j9') format('truetype'),
+    url('../fonts2/icomoon.woff?dzz4j9') format('woff'),
+    url('../fonts2/icomoon.svg?dzz4j9#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -87,7 +87,7 @@
 .icon-search {
   display: block;
   text-align: center;
-  margin: 120px 10px 15px 10px;
+  margin: 40px 10px 15px 10px;
   cursor: pointer;
 }
 /* search fin*/
@@ -101,7 +101,7 @@
 .icon-question {
   display: block;
   text-align: center;
-  margin: 200px auto 0;
+  margin: 150px auto 0;
   cursor: pointer;
 }
 
@@ -130,7 +130,9 @@
 .icon-github {
   display: block;
   text-align: center;
-  margin: 40px auto 0;
+  /*  margin: 90px auto 0; */
+  /* margin-top: 100px;
+    margin-bottom: 0px; */
   cursor: pointer;
 }
 /* git fin*/
@@ -193,7 +195,7 @@ nav ul li a {
   font-size: 14px;
 }
 .user {
-  width: 25rem;
+  width: 27rem;
   height: 58px;
   display: flex;
   align-items: center;
@@ -201,7 +203,7 @@ nav ul li a {
   border-radius: 7px;
   background: rgba(194, 114, 194, 0.479);
   left: -4000px;
-  transition: 0.3s;
+  transition: 0.2s;
   cursor: pointer;
 }
 .style-user:hover {
@@ -212,6 +214,10 @@ nav ul li a {
   color: black;
   text-decoration: none;
 }
+.user p {
+  margin-left: 8px;
+}
+
 .team {
   margin-right: -30px;
 }
@@ -231,23 +237,23 @@ nav ul li a {
   height: 100vh;
   background: rgba(251, 251, 251, 0.404);
   position: absolute;
-  top: 0;
+  top: 90px;
   left: 0;
 }
 .search-icon {
   width: 20px;
   display: block;
-  margin: 120px auto 0;
+  margin: 80px auto 0;
 }
 .social-links {
   width: 30px;
   display: block;
-  margin: 160px auto 0;
+  margin: 180px auto 0;
   text-align: center;
 }
 /* .social-links img {
-  height: 15px;
-  margin-bottom: 30px; */
+    height: 15px;
+    margin-bottom: 30px; */
 
 .info-icon {
   width: 30px;
@@ -346,4 +352,136 @@ nav ul li a {
   top: 0;
   transform: translateX(-50%);
   transition: 0.5s;
+}
+/* estilos de los certificados */
+.title-certification {
+  width: 220px;
+  margin-left: 650px;
+  margin-top: 30px;
+  color: rgb(216, 214, 214);
+}
+.title-certification:hover {
+  box-shadow: 0 2px 3px #d48cf0a4;
+}
+
+.gallery-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* esta función me ayuda a que no se distrocione las imagenes*/
+  /*  padding: 5px; */
+}
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 100x;
+  padding: 20px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.galery-item {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.gallery-title {
+  position: absolute;
+  bottom: 0;
+  color: rgb(22, 21, 21);
+  background: linear-gradient(
+    rgba(226, 17, 216, 0.534),
+    rgba(228, 147, 228, 0.603)
+  ); /* degradado  */
+  margin: 0;
+  text-align: justify;
+  padding: 20px;
+  transform: translateY(100%);
+  transition: all 0.5s ease-out;
+}
+.galery-item:hover .gallery-title {
+  transform: translate(0%);
+}
+
+.galery-item:nth-child(4) {
+  grid-column-start: span 2;
+}
+.gallery-item:nth-child(1) {
+  grid-column-start: span 2;
+}
+.gallery-item:nth-child(5) {
+  grid-row-start: span 2;
+}
+.gallery-item:nth-child(9) {
+  grid-column-start: span 2;
+}
+
+@media (min-width: 768px) {
+  .gallery-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .gallery-item:nth-child(5) {
+    grid-row-start: span 2;
+  }
+  .galery-item:nth-child(3) {
+    grid-row-start: span 3;
+  }
+  .gallery-item:nth-child(1) {
+    grid-column-start: span 3;
+  }
+  .gallery-item:nth-child(5) {
+    grid-row-start: span 2;
+  }
+  .gallery-item:nth-child(9) {
+    grid-column-start: span 3;
+  }
+}
+@media (min-width: 1024px) {
+  .gallery-container {
+    grid-template-columns: repeat(5, 1fr);
+    width: 75%;
+    margin-right: 70px;
+  }
+  .gallery-item:nth-child(1) {
+    grid-column-start: span 3;
+    grid-row-start: span 1;
+  }
+  .galery-item:nth-child(2) {
+    grid-column-start: span 4;
+    grid-row-start: span 1;
+  }
+  .galery-item:nth-child(3) {
+    grid-column-start: span 3;
+  }
+
+  .galery-item:nth-child(4) {
+    grid-row-start: span 2.5;
+  }
+  .galery-item:nth-child(5) {
+    grid-column-start: span 2;
+    /*    grid-row-start: span 2; */
+  }
+  .galery-item:nth-child(6) {
+    grid-column-start: span 2;
+  }
+  .galery-item:nth-child(7) {
+    grid-column-start: span 1.5;
+    grid-row-start: span 2;
+  }
+  .galery-item:nth-child(8) {
+    grid-column-start: span 2;
+    /*  grid-row-start: span 3; */
+  }
+  .galery-item:nth-child(9) {
+    grid-column-start: span 2;
+    /* grid-row-start: span 4; */
+  }
+  .galery-item:nth-child(10) {
+    grid-column-start: span 4;
+    /* grid-row-start: span 1; */
+  }
+  .galery-item:nth-child(11) {
+    grid-column-start: span 5;
+    grid-row-start: span 10;
+    /*  grid-row-start: ; */
+  }
 }

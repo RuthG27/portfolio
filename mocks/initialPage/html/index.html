@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png"
         href="https://cdn.pixabay.com/photo/2016/10/16/21/11/ice-symbol-1746262_960_720.png">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!--   <script type="text/javascript" src="./js/index/activeSearch.js"></script> -->
     <title>Web portfolio</title>
 </head>
 
@@ -14,8 +15,11 @@
     <div class="container">
         <div class="navbar">
             <div class="logo">
-                <img src="https://cdn.pixabay.com/photo/2016/10/16/21/11/ice-symbol-1746262_960_720.png"
-                    alt=" logo página">
+                <a href="./index.html">
+                    <img src="https://cdn.pixabay.com/photo/2016/10/16/21/11/ice-symbol-1746262_960_720.png"
+                        alt=" logo página">
+                </a>
+
             </div>
             <nav>
                 <ul>
@@ -26,12 +30,12 @@
                 </ul>
             </nav>
             <div class="user">
-                <img src="./images/foto.png" alt="mi foto personal">
-                <a class="style-user" href="https://www.youtube.com/watch?v=9TQKyDD9Yig">
+                <img src="../images/foto.png" alt="mi foto personal">
+                <a class="style-user" href="./user1.html">
                     <p>Ruth G. Albarracín</p>
                 </a>
-                <img src="./images/foto.png" alt="mi foto personal">
-                <a class="style-user" href="####">
+                <img src="../images/foto.png" alt="mi foto personal">
+                <a class="style-user" href="./user2.html">
                     <p>Ruth G. Albarracín</p>
                 </a>
 
@@ -119,6 +123,7 @@
         </div>
     </div>
     <script>
+
         var slider = document.getElementById("slider");
         var active = document.getElementById("active");
         var linea1 = document.getElementById("linea1");
@@ -146,21 +151,21 @@
         }
 
     </script>
+
     <script>
-        /* face*/
-        const user = document.querySelector(".user");
+        /* face */
+        const user = document.querySelector('.user');
         console.log(user);
-        const userButton = document.querySelector("#burger-menu")
+        const userButton = document.querySelector('#burger-menu');
         console.log(userButton);
-        userButton.addEventListener("click", hideShow)
+        userButton.addEventListener('click', hideShow);
         function hideShow() {
-            if (user.classList.contains("is-active")) {
-                user.classList.remove("is-active");
+            if (user.classList.contains('is-active')) {
+                user.classList.remove('is-active');
             } else {
-                user.classList.add("is-active");
+                user.classList.add('is-active');
             }
         }
-
     </script>
     <script>
         /* input */
@@ -178,6 +183,7 @@
 
         }
     </script>
+
 </body>
 
 </html>
