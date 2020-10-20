@@ -30,11 +30,11 @@
             </nav>
             <div class="user">
                 <img src="../images/foto.png" alt="mi foto personal">
-                <a class="style-user" href="###">
+                <a class="style-user" href="user1.html">
                     <p>Ruth G. Albarracín</p>
                 </a>
                 <img src="../images/foto.png" alt=" mi foto personal">
-                <a class="style-user" href="####">
+                <a class="style-user" href="user2.html">
                     <p>Ruth G. Albarracín</p>
                 </a>
 
@@ -185,68 +185,11 @@
             <div id="active"></div>
         </div>
     </div>
-    <script>
-
-        var slider = document.getElementById("slider");
-        var active = document.getElementById("active");
-        var linea1 = document.getElementById("linea1");
-        var linea2 = document.getElementById("linea2");
-        var linea3 = document.getElementById("linea3");
-        var linea4 = document.getElementById("linea4");
-
-        linea1.onclick = function () {
-            slider.style.transform = "translateX(0)";
-            active.style.top = "0px"
-        }
-        linea2.onclick = function () {
-            slider.style.transform = "translateX(-25%)";
-            active.style.top = "80px";
-        }
-
-        linea3.onclick = function () {
-            slider.style.transform = "translateX(-50%)";
-            active.style.top = "160px";
-        }
-
-        linea4.onclick = function () {
-            slider.style.transform = "translateX(-75%)";
-            active.style.top = "240px";
-        }
-
-    </script>
-
-    <script>
-        /* face */
-        const user = document.querySelector('.user');
-        console.log(user);
-        const userButton = document.querySelector('#burger-menu');
-        console.log(userButton);
-        userButton.addEventListener('click', hideShow);
-        function hideShow() {
-            if (user.classList.contains('is-active')) {
-                user.classList.remove('is-active');
-            } else {
-                user.classList.add('is-active');
-            }
-        }
-    </script>
-    <script>
-        /* input */
-        const search = document.querySelector(".search-toolbar")
-        console.log(search)
-        const button = document.querySelector("#input-menu");
-        console.log(button)
-        button.addEventListener("click", showHide)
-        function showHide() {
-            if (search.classList.contains("is-motion")) {
-                search.classList.remove("is-motion");
-            } else {
-                search.classList.add("is-motion");
-            }
-
-        }
-    </script>
-
+    <!-- INICIO DE JS -->
+    <script src="../js/index/activeSearch.js"></script> <!-- search -->
+    <script src="../js/index/activeUsermanager.js"></script> <!-- menu-team -->
+    <script src="../js/index/scroll.js"></script> <!-- scroll -->
+    <!-- FIN DE JS -->
 </body>
 
 </html>
